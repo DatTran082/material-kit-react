@@ -32,13 +32,13 @@ import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-
+// import Admidtions from "pages/LandingPages/AboutUs/sections/Admidtions";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/nha-alpha.jpeg";
 
 function AboutUs() {
   return (
@@ -129,6 +129,7 @@ function AboutUs() {
       >
         <Information />
         <Team />
+        {/* <Admidtions/> */}
         <Featuring />
         <Newsletter />
       </Card>

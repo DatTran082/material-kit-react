@@ -24,9 +24,9 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-// import bgImage from "assets/images/examples/blog2.jpg";
+import bgImage from "assets/images/examples/blog2.jpg";
 
-function Contact() {
+function Admidtions() {
   return (
     <MKBox component="section" py={{ xs: 0, lg: 6 }}>
       <Container>
@@ -54,7 +54,7 @@ function Contact() {
                     `${linearGradient(
                       rgba(gradients.dark.main, 0.8),
                       rgba(gradients.dark.state, 0.8)
-                    )}, url(${"https://w.ladicdn.com/s650x900/5a963508596875a97275336a/box_3_1-20200411104313.png"})`,
+                    )}, url(${bgImage})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -67,7 +67,7 @@ function Contact() {
                 >
                   <MKBox py={6} pr={6} pl={{ xs: 6, sm: 12 }} my="auto">
                     <MKTypography variant="h3" color="white" mb={1}>
-                      ĐĂNG KÝ TƯ VẤN
+                      Contact Information
                     </MKTypography>
                     <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
                       Fill up the form and our Team will get back to you within 24 hours.
@@ -138,10 +138,10 @@ function Contact() {
                 <MKBox component="form" p={2} method="post">
                   <MKBox px={3} py={{ xs: 2, sm: 6 }}>
                     <MKTypography variant="h2" mb={1}>
-                      nhập thông tin
+                      Say Hi!
                     </MKTypography>
                     <MKTypography variant="body1" color="text" mb={2}>
-                      Nhập đầy đủ thông tin để đăng ký tư vấn.
+                      We&apos;d like to talk with you.
                     </MKTypography>
                   </MKBox>
                   <MKBox pt={0.5} pb={3} px={3}>
@@ -149,7 +149,7 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="Họ và tên"
+                          label="My name is"
                           placeholder="Full Name"
                           InputLabelProps={{ shrink: true }}
                           fullWidth
@@ -158,8 +158,8 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="Ngày sinh"
-                          placeholder="Ngày / tháng / năm sinh"
+                          label="I'm looking for"
+                          placeholder="What you love"
                           InputLabelProps={{ shrink: true }}
                           fullWidth
                         />
@@ -167,38 +167,12 @@ function Contact() {
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
-                          label="Email"
-                          placeholder="Email"
+                          label="Your message"
+                          placeholder="I want to say that..."
                           InputLabelProps={{ shrink: true }}
                           fullWidth
-                        />
-                      </Grid>
-                      <Grid item xs={12} pr={1} mb={6}>
-                        <MKInput
-                          variant="standard"
-                          label="Số điện thoại"
-                          placeholder="Số điện thoại"
-                          InputLabelProps={{ shrink: true }}
-                          fullWidth
-                        />
-                      </Grid>
-                      <Grid item xs={12} pr={1} mb={6}>
-                        <MKInput
-                          variant="standard"
-                          label="Trường THPT"
-                          placeholder="Trường THPT"
-                          InputLabelProps={{ shrink: true }}
-                          fullWidth
-                        />
-                      </Grid>
-                      <Grid item xs={12} pr={1} mb={6}>
-                        <MKInput
-                      
-                          variant="standard"
-                          label="Tỉnh thành phố"
-                          placeholder="Tỉnh thành phố"
-                          InputLabelProps={{ shrink: true }}
-                          fullWidth
+                          multiline
+                          rows={6}
                         />
                       </Grid>
                     </Grid>
@@ -212,7 +186,7 @@ function Contact() {
                       ml="auto"
                     >
                       <MKButton variant="gradient" color="info">
-                        Đăng ký
+                        Send Message
                       </MKButton>
                     </Grid>
                   </MKBox>
@@ -226,4 +200,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Admidtions;

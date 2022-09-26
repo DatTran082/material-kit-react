@@ -40,7 +40,7 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
+// import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
@@ -264,11 +264,11 @@ const routes = [
       },
     ],
   },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
-  },
+  // {
+  //   name: "github",
+  //   icon: <GitHubIcon />,
+  //   href: "https://www.github.com/creativetimofficial/material-kit-react",
+  // },
 ];
 
 export default routes;
